@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["dom", "DOM.Iterable","ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    /* Bundler mode */
+    "moduleResolution": "Node",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "typeRoots": ["./node_modules/@types/"],
+    "jsx": "react-jsx",
+    "strictNullChecks": false,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Paths */
+    "baseUrl": ".",
+    "paths": {
+      "@queries": ["src/queries"],
+      "@queries/*": ["src/queries/*"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src",
+    "src/**/*",
+    "vite.config.ts",
+    "node_modules/.pnpm/typescript@5.8.2/node_modules/typescript/lib/lib.es5.d.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
